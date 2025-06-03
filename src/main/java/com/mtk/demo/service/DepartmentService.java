@@ -1,15 +1,19 @@
 package com.mtk.demo.service;
 
+import java.util.List;
+
 import com.mtk.demo.dto.DepartmentDTO;
 
 public interface DepartmentService {
 	
-	DepartmentDTO creatEmployee(DepartmentDTO departmentDTO);
+	DepartmentDTO createDepartment(DepartmentDTO departmentDTO);
 	
-	DepartmentDTO getAllEmployee(Long departmentId);
+	DepartmentDTO getDepartmentById(Long departmentId);
 	
-	DepartmentDTO updateEmployee(Long departmentId, DepartmentDTO updatedDepartment);
+	List<DepartmentDTO> getAllDepartmet();
 	
-	void deleteEmployee(Long departmentId);
+	DepartmentDTO updateDepartment(Long departmentId, DepartmentDTO updatedDepartment);
+	
+	void deleteDepartment(Long departmentId);
 
 }
